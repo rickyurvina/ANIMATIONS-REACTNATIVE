@@ -9,8 +9,7 @@ const Animation2 = () => {
         Animated.timing(
             animation, {
             toValue: 450,//valor que llega
-            duration: 1000, //tiempo que tarda en llegar
-            useNativeDriver: true
+            duration: 1000,
         }
         ).start()
 
@@ -18,7 +17,7 @@ const Animation2 = () => {
 
 
     return (
-        <Animated.View style={[styles.box, ]}>
+        <Animated.View style={[styles.box,{ width:animation,  height:animation} ]}>
         </Animated.View>
     )
 }
